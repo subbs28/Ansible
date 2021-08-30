@@ -21,7 +21,7 @@
   mysql_db: name={{ dbname }} state=present
 
 - name: Create Application DB User
-  mysql_user: name={{ dbuser }} password={{ dbpassword }} priv=*.*:ALL host='172.20.1.100' state=present
+  mysql_user: name={{ dbuser }} password={{ dbpassword }} priv=*.*:ALL host='20.53.8.222' state=present
 
 - name: Move db-load-script to db host
   template:
